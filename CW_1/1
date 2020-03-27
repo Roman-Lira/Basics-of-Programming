@@ -1,0 +1,29 @@
+#include <string>
+
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+   
+    int a; 
+    cout<<"Number - "<<endl;
+    cin >> a; 
+    int temp = a; 
+ 
+    int b = 0; 
+ 
+    while (temp != 0)
+    {
+          b = b * 10 + temp % 10; 
+          temp /= 10; 
+    }
+ 
+    if (a == b)
+          cout << "Palindrom";
+    else
+          cout << "Fail";
+    
+    
+    return 0;
+}
