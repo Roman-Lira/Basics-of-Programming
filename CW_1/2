@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    string s;
+    cin >> s;
+
+    switch (s[0]){
+        case '+':
+            cout << "Addition";
+            break;
+        case '-':
+            cout << "Subtraction";
+            break;
+        case '*':
+            cout << "Multiplication";
+            break;
+        case '/':
+            cout << "Division";
+            break;
+        default:
+            cout << "I don`t understand you:)";
+            break;
+    }
+    return 0;
+}
